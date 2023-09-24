@@ -41,7 +41,7 @@ function testValueFunction(currentName, value, index) {
 <template>
 <div class="gameContainer" :data-id-query="muscle.id">
   <div class="imageContainer">
-    <img :src="'../src/images/' + muscle.imgSrc + '.JPG'" height="350"/>
+    <img :src="'/' + muscle.imgSrc + '.JPG'" height="350"/>
   </div>
   <div class="queryContainer row">
     <input :value="muscle.name" type="hidden" :data-id-query-actual="muscle.id">

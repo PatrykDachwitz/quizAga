@@ -6,7 +6,7 @@ defineProps(['muscle']);
 <template>
   <div class="fiszkiContainer" :data-id-fiszki="muscle.id">
     <div class="imageContainer">
-      <img :src="'../src/images/' + muscle.imgSrc + '.JPG'" height="350"/>
+      <img :src="'/' + muscle.imgSrc + '.JPG'" height="350"/>
     </div>
     <div class="queryContainer row">
       <p class="px-5">
