@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from 'vue'
-import ImageContainer from "@/components/imageContainer.vue";
 defineProps(['muscle']);
 
 </script>
