@@ -15,9 +15,6 @@ const querys = inject('querysValue');
 const testValue = inject('testQuery');
 function testValueFunction(currentName, value, index) {
 
-  console.log("currentId: " + currentName);
-  console.log("value: " + value);
-  console.log("index: " + index);
   if(currentName == value) {
     let btnSuccess = document.querySelector('button[data-btn-id="' + index + '"]');
     btnSuccess.classList.remove('btn-primary');
@@ -48,8 +45,8 @@ function testValueFunction(currentName, value, index) {
   </div>
   <div class="queryContainer row">
     <input :value="muscle.name" type="hidden" :data-id-query-actual="muscle.id">
-    <div v-for="(query, index) in querys" :key="index" class="col-6 d-flex justify-content-center align-items-center">
-      <button class="btn btn-primary w-50 h-50" :data-btn-id="muscle.id + 'test' + index" @click="testValueFunction(muscle.name, query, muscle.id + 'test' + index)">{{ query }}</button>
+    <div v-for="(query, index) in querys" :key="index" class="col-6 mb-4 d-flex justify-content-center align-items-center">
+      <button class="btn btn-primary w-100 h-100 " :data-btn-id="muscle.id + 'test' + index" @click="testValueFunction(muscle.name, query, muscle.id + 'test' + index)">{{ query }}</button>
     </div>
   </div>
 </div>

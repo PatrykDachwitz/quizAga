@@ -33,8 +33,8 @@ defineProps(['muscle']);
 }
 
 .imageContainer {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 40vh;
+  max-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ defineProps(['muscle']);
   max-height: 80vh;
 }
 .queryContainer {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 60vh;
+  max-height: 60vh;
 }
 </style>
