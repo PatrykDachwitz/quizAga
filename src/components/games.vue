@@ -22,8 +22,8 @@ function testValueFunction(currentName, value, index) {
     testValue.value = currentName + getRandomArbitrary(1, 10000);
 
     setTimeout(() =>{
-      btnErr.classList.add('btn-primary');
-      btnErr.classList.remove('btn-success');
+      btnSuccess.classList.add('btn-primary');
+      btnSuccess.classList.remove('btn-success');
     }, 600)
 
   } else {
