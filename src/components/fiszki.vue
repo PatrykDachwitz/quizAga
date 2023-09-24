@@ -6,7 +6,7 @@ defineProps(['muscle']);
 <template>
   <div class="fiszkiContainer" :data-id-fiszki="muscle.id">
     <div class="imageContainer">
-      <img :src="'/' + muscle.imgSrc + '.JPG'" height="350"/>
+      <img :src="'/' + muscle.imgSrc + '.JPG'" height="200"/>
     </div>
     <div class="queryContainer row">
       <p class="px-5">
@@ -33,8 +33,7 @@ defineProps(['muscle']);
 }
 
 .imageContainer {
-  min-height: 40vh;
-  max-height: 40vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +42,6 @@ defineProps(['muscle']);
   max-height: 80vh;
 }
 .queryContainer {
-  min-height: 60vh;
-  max-height: 60vh;
+
 }
 </style>

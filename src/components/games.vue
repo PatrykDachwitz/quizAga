@@ -21,6 +21,11 @@ function testValueFunction(currentName, value, index) {
     btnSuccess.classList.add('btn-success');
     testValue.value = currentName + getRandomArbitrary(1, 10000);
 
+    setTimeout(() =>{
+      btnErr.classList.add('btn-primary');
+      btnErr.classList.remove('btn-success');
+    }, 600)
+
   } else {
     let btnErr = document.querySelector('button[data-btn-id="' + index + '"]');
     btnErr.classList.remove('btn-primary');
