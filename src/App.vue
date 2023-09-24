@@ -199,17 +199,17 @@ watch(testQuery, () =>{
 <div class="position-relative fiszkiActiveDiv d-none" data-end-id="0" data-start-id="0" data-current-id="0">
   <fiszki v-for="(muscle, index) in musculeFiszki" class="d-none" :key="muscle.id" :muscle="muscle" />
 
-  <div class="position-absolute bottom-0 w-100 d-flex justify-content-between buttonNexPrevious">
-    <button class="btn btn-primary ms-2 mb-2 fs-5" @click="changeFiszki('previous')">
-    Poprzedni
-    </button>
+  <div class="position-absolute top-0 w-100 d-flex justify-content-between buttonNexPrevious">
+    <div>
+      <button class="btn btn-primary fs-3 mt-2 ms-2" @click="changeFiszkiBack" >
+        <bold>&lt;</bold>
+      </button>
+      <button class="btn btn-primary ms-2 mb-2 fs-5" @click="changeFiszki('previous')">
+        Poprzedni
+      </button>
+    </div>
     <button class="btn btn-primary me-2 mb-2 fs-5" @click="changeFiszki('next')">
     Następny
-    </button>
-  </div>
-  <div class="position-absolute top-0 left-0">
-    <button class="btn btn-primary fs-3 mt-2 ms-2" @click="changeFiszkiBack" >
-      <bold>&lt;</bold>
     </button>
   </div>
 </div>
